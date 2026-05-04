@@ -1,0 +1,238 @@
+{
+  "zones": [
+    {
+      "id": 1,
+      "name": "Kallio",
+      "municipality": "Helsinki",
+      "lat": 60.1841,
+      "lon": 24.9497
+    },
+    {
+      "id": 2,
+      "name": "Töölö",
+      "municipality": "Helsinki",
+      "lat": 60.1756,
+      "lon": 24.9214
+    },
+    {
+      "id": 3,
+      "name": "Pasila",
+      "municipality": "Helsinki",
+      "lat": 60.1989,
+      "lon": 24.9335
+    },
+    {
+      "id": 4,
+      "name": "Vuosaari",
+      "municipality": "Helsinki",
+      "lat": 60.209,
+      "lon": 25.1469
+    },
+    {
+      "id": 5,
+      "name": "Tapiola",
+      "municipality": "Espoo",
+      "lat": 60.1759,
+      "lon": 24.8045
+    },
+    {
+      "id": 6,
+      "name": "Leppävaara",
+      "municipality": "Espoo",
+      "lat": 60.219,
+      "lon": 24.813
+    },
+    {
+      "id": 7,
+      "name": "Tikkurila",
+      "municipality": "Vantaa",
+      "lat": 60.2924,
+      "lon": 25.044
+    },
+    {
+      "id": 8,
+      "name": "Myyrmäki",
+      "municipality": "Vantaa",
+      "lat": 60.2658,
+      "lon": 24.8554
+    },
+    {
+      "id": 9,
+      "name": "Järvenpää centre",
+      "municipality": "Järvenpää",
+      "lat": 60.4736,
+      "lon": 25.0899
+    },
+    {
+      "id": 10,
+      "name": "Kerava centre",
+      "municipality": "Kerava",
+      "lat": 60.4036,
+      "lon": 25.1046
+    }
+  ],
+  "datasets": [
+    {
+      "id": 1,
+      "name": "Building Permits 2024",
+      "description": "Approved construction and renovation permits",
+      "provider": "City of Helsinki"
+    },
+    {
+      "id": 2,
+      "name": "Energy Certificates (EPC)",
+      "description": "Energy performance ratings for residential buildings",
+      "provider": "Motiva Oy"
+    },
+    {
+      "id": 3,
+      "name": "Property Transactions",
+      "description": "Registered real estate sale prices and dates",
+      "provider": "Maanmittauslaitos"
+    },
+    {
+      "id": 4,
+      "name": "Zoning Plans",
+      "description": "Current land use and zoning classifications",
+      "provider": "HSY"
+    },
+    {
+      "id": 5,
+      "name": "Population Density",
+      "description": "Resident count and density per district grid",
+      "provider": "Statistics Finland"
+    }
+  ],
+  "coverage": [
+    {
+      "zone_id": 1,
+      "dataset_id": 1,
+      "last_updated": "2026-04-10"
+    },
+    {
+      "zone_id": 1,
+      "dataset_id": 2,
+      "last_updated": "2026-02-01"
+    },
+    {
+      "zone_id": 1,
+      "dataset_id": 3,
+      "last_updated": "2026-04-20"
+    },
+    {
+      "zone_id": 1,
+      "dataset_id": 5,
+      "last_updated": "2024-10-15"
+    },
+    {
+      "zone_id": 2,
+      "dataset_id": 1,
+      "last_updated": "2026-03-28"
+    },
+    {
+      "zone_id": 2,
+      "dataset_id": 4,
+      "last_updated": "2026-01-05"
+    },
+    {
+      "zone_id": 2,
+      "dataset_id": 3,
+      "last_updated": "2026-04-15"
+    },
+    {
+      "zone_id": 3,
+      "dataset_id": 1,
+      "last_updated": "2026-04-22"
+    },
+    {
+      "zone_id": 3,
+      "dataset_id": 2,
+      "last_updated": "2026-04-01"
+    },
+    {
+      "zone_id": 3,
+      "dataset_id": 4,
+      "last_updated": "2024-09-10"
+    },
+    {
+      "zone_id": 4,
+      "dataset_id": 3,
+      "last_updated": "2026-03-01"
+    },
+    {
+      "zone_id": 4,
+      "dataset_id": 5,
+      "last_updated": "2026-02-14"
+    },
+    {
+      "zone_id": 5,
+      "dataset_id": 2,
+      "last_updated": "2026-04-18"
+    },
+    {
+      "zone_id": 5,
+      "dataset_id": 1,
+      "last_updated": "2026-01-20"
+    },
+    {
+      "zone_id": 5,
+      "dataset_id": 5,
+      "last_updated": "2026-04-05"
+    },
+    {
+      "zone_id": 6,
+      "dataset_id": 4,
+      "last_updated": "2026-03-15"
+    },
+    {
+      "zone_id": 6,
+      "dataset_id": 3,
+      "last_updated": "2024-11-30"
+    },
+    {
+      "zone_id": 7,
+      "dataset_id": 1,
+      "last_updated": "2026-04-08"
+    },
+    {
+      "zone_id": 7,
+      "dataset_id": 2,
+      "last_updated": "2026-02-28"
+    },
+    {
+      "zone_id": 7,
+      "dataset_id": 5,
+      "last_updated": "2026-04-12"
+    },
+    {
+      "zone_id": 8,
+      "dataset_id": 3,
+      "last_updated": "2026-03-20"
+    },
+    {
+      "zone_id": 8,
+      "dataset_id": 4,
+      "last_updated": "2024-08-01"
+    },
+    {
+      "zone_id": 9,
+      "dataset_id": 5,
+      "last_updated": "2026-01-10"
+    },
+    {
+      "zone_id": 9,
+      "dataset_id": 3,
+      "last_updated": "2026-03-25"
+    },
+    {
+      "zone_id": 10,
+      "dataset_id": 5,
+      "last_updated": "2024-12-01"
+    },
+    {
+      "zone_id": 10,
+      "dataset_id": 1,
+      "last_updated": "2026-02-10"
+    }
+  ]
+}
