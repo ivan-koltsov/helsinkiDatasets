@@ -22,7 +22,7 @@ services:
       FLASK_APP: ${FLASK_APP}
       FLASK_ENV: ${FLASK_ENV}
     ports:
-      - "5001:5000"
+      - "5005:5000"
     depends_on:
       db:
         condition: service_healthy

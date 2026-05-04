@@ -25,7 +25,15 @@ def handle_error(e):
 
 @app.route('/api/health', methods=['GET'])
 def health():
+    print("Health check requested")
     return jsonify({"status": "healthy"}), 200
+
+@app.route('/api/debug', methods=['GET'])
+def debug():
+    return jsonify({
+        "database_url_set": bool(os.getenv('DATABASE_URL')),
+        "env": dict(os.environ)
+    }), 200
 
 @app.route('/api/zones', methods=['GET'])
 def get_zones():
@@ -52,6 +60,16 @@ def get_coverage():
     return jsonify([r.to_dict() for r in results])
 
 if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()
-    app.run(host='0.0.0.0', port=5000)
+    print(">>> FLASK STARTING UP <<<")
+    print(f">>> DATABASE_URL: {os.getenv('DATABASE_URL')}")
+    
+    print("Initializing database tables...")
+    try:
+        with app.app_context():
+            db.create_all()
+        print("Database tables initialized successfully.")
+    except Exception as e:
+        print(f"ERROR during database initialization: {e}")
+        
+    print(f"Starting server on 0.0.0.0:5000...")
+    app.run(host='0.0.0.0', port=5000, debug=True)

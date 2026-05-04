@@ -51,4 +51,9 @@ def seed_data():
         print("Database seeded successfully!")
 
 if __name__ == '__main__':
-    seed_data()
+    print("Seeding database...")
+    try:
+        seed_data()
+    except Exception as e:
+        print(f"Error during seeding: {e}")
+        exit(1)
